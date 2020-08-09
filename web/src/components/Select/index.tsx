@@ -12,7 +12,7 @@ const Select: React.FC<SelectProps> = ({label, name, options, ...rest}) => {
   return (
     <div className="select-block">
       <label htmlFor={name}>{label}</label>
-      <select id={name} {...rest} value="">
+      <select id={name} {...rest} defalt-value="">
         <option value="" disabled hidden>Selecione uma opção</option>
         {options.map(option => {
           return (
